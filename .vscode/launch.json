@@ -1,0 +1,93 @@
+{
+    // Используйте IntelliSense, чтобы узнать о возможных атрибутах.
+    // Наведите указатель мыши, чтобы просмотреть описания существующих атрибутов.
+    // Для получения дополнительной информации посетите: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "C++: g++",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Включить автоматическое форматирование для gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C++: g++",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C: gcc",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
+            "args": ["password"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Включить автоматическое форматирование для gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C: gcc",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C: gcc + makefile [lib]", 
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/tank.out", // TODO: подогнать так, чтоб не указывать имя файла руками + сделать make автоматическим
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Включить автоматическое форматирование для gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "makefile",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C: gcc + makefile [src/lib]", 
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/../ship.out", // TODO: подогнать так, чтоб не указывать имя файла руками + сделать make автоматическим
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Включить автоматическое форматирование для gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "makefile", // ! СМОТРЕТЬ ВОТ СЮДА 
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
