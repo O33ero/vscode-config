@@ -5,7 +5,12 @@
         "ncurses.h": "c",
         "advcurses.h": "c",
         "ship.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "cstdint": "cpp",
+        "tank.h": "c",
+        "gamemanager.h": "c",
+        "render.h": "c",
+        "network.h": "c"
     },
     "better-comments.tags": [
 

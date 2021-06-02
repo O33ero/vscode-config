@@ -72,8 +72,8 @@
             "name": "C: gcc + makefile [src/lib]", 
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/../ship.out", // TODO: подогнать так, чтоб не указывать имя файла руками + сделать make автоматическим
-            "args": [],
+            "program": "${fileDirname}/../tank.out", // TODO: подогнать так, чтоб не указывать имя файла руками + сделать make автоматическим
+            "args": ["10.0.2.15", "10.0.2.1"],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
