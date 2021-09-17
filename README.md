@@ -1,1 +1,1 @@
-## Мои конфиги для VS Code Linux
+# Мои конфиги для VS Code Linux
